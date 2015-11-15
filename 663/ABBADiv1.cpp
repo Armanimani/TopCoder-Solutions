@@ -69,13 +69,3 @@ void ABBADiv1::compare(string initial, string target){
 
 	}
 }
-
-//int main(){
-//
-//	string a = "ABB";
-//	string b = "ABBA";
-//
-//	ABBADiv1 cl;
-//	cl.canObtain(a, b);
-//
-//}
