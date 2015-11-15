@@ -1,5 +1,6 @@
 #include <string>
 #include <algorithm>
+
 using namespace std;
 class ABBADiv1{
 
@@ -7,23 +8,17 @@ public:
 	string canObtain(string initial, string target);
 
 private:
-
+	
 	bool condition = false;
-
-	string initial;
-	string target;
 
 	string reverseAmove(string s);
 	string reverseBmove(string s);
-
 	void compare(string initial, string target);
 
 };
 
 string ABBADiv1::canObtain(string initial, string target){
 
-	this->initial = initial;
-	this->target = target;
 	compare(initial, target);
 
 	if (condition == true){
