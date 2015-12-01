@@ -21,7 +21,7 @@ public:
 					for (int k = j + 1; k != x.size(); ++k){
 						int number = 0;
 						for (int l = 0; l != x.size(); ++l){
-							if ((x[i] - x[l]) * (y[j] - y[l]) - (x[j] - x[l]) * (y[i] - y[l]) == 0){
+							if ((x[l] - x[i]) * dy - (y[l] - y[i]) * dx == 0){
 								++number;
 							}
 							else if ((y[k] - y[l]) * dy + (x[k] - x[l]) * dx == 0){
